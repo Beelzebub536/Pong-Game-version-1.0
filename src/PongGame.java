@@ -26,7 +26,6 @@ public class PongGame extends JPanel implements KeyListener, ActionListener {
     private static int score2 = 0;
     private final JLabel scoreBoard;
 
-
     public PongGame() {
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setBackground(Color.BLACK);
@@ -105,7 +104,6 @@ public class PongGame extends JPanel implements KeyListener, ActionListener {
     private void updateScoreLabel() {
         scoreBoard.setText("Player 1: " + score1 + " | Player 2: " + score2);
     }
-
 
     @Override
     public void keyPressed(KeyEvent e) {
